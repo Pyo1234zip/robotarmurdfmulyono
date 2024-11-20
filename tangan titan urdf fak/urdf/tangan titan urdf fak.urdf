@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="tangan titan urdf fak">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.00452278705202603 -0.000309862305232445 0.0340101482955649"
+        rpy="0 0 0" />
+      <mass
+        value="0.15690853286764" />
+      <inertia
+        ixx="0.000238761864794462"
+        ixy="1.45222853637776E-06"
+        ixz="1.67899605611514E-05"
+        iyy="0.000229112300024644"
+        iyz="-1.27338941808698E-07"
+        izz="0.000353499341449016" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tangan titan urdf fak/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tangan titan urdf fak/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link1">
+    <inertial>
+      <origin
+        xyz="0.00255028347238319 0.0132973747425095 0.0184421640517084"
+        rpy="0 0 0" />
+      <mass
+        value="0.110824441482646" />
+      <inertia
+        ixx="8.64134737598868E-05"
+        ixy="-1.58030386482057E-06"
+        ixz="-4.11903180142898E-08"
+        iyy="9.13032174368967E-05"
+        iyz="-8.58694398732669E-06"
+        izz="8.7285091317238E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tangan titan urdf fak/meshes/link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tangan titan urdf fak/meshes/link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="revolute">
+    <origin
+      xyz="0.012417 0 0.080043"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1" />
+    <axis
+      xyz="-0.1533 0 -0.98818" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="1.08"
+      velocity="7.48" />
+  </joint>
+  <link
+    name="link2">
+    <inertial>
+      <origin
+        xyz="0.0492824186282574 0.0212736223698067 -0.00549613379458742"
+        rpy="0 0 0" />
+      <mass
+        value="0.120061924722487" />
+      <inertia
+        ixx="4.49595784632651E-05"
+        ixy="3.2451062887462E-08"
+        ixz="3.07860928616426E-05"
+        iyy="0.000284291366698506"
+        iyz="-1.37318792010264E-07"
+        izz="0.000275797443406489" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tangan titan urdf fak/meshes/link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tangan titan urdf fak/meshes/link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="revolute">
+    <origin
+      xyz="0.0063981 0 0.041738"
+      rpy="-3.1416 0 0" />
+    <parent
+      link="link1" />
+    <child
+      link="link2" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="1.08"
+      velocity="7.48" />
+  </joint>
+  <link
+    name="link3">
+    <inertial>
+      <origin
+        xyz="0.028743428881696 0.0301358791822174 -0.0409185676281348"
+        rpy="0 0 0" />
+      <mass
+        value="0.207694596865866" />
+      <inertia
+        ixx="0.000248085819606119"
+        ixy="-4.75883918191281E-12"
+        ixz="0.000134782439659382"
+        iyy="0.000347203357162288"
+        iyz="-6.50862367388947E-12"
+        izz="0.000149670240067763" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tangan titan urdf fak/meshes/link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tangan titan urdf fak/meshes/link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="revolute">
+    <origin
+      xyz="0.099149 0 -0.013017"
+      rpy="3.1416 0 0" />
+    <parent
+      link="link2" />
+    <child
+      link="link3" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="1.08"
+      velocity="7.48" />
+  </joint>
+  <link
+    name="link4">
+    <inertial>
+      <origin
+        xyz="0.0267465889957309 -0.0205906528247407 -0.00631258362265814"
+        rpy="0 0 0" />
+      <mass
+        value="0.0812289590440463" />
+      <inertia
+        ixx="3.43752148435915E-05"
+        ixy="6.45445258213866E-07"
+        ixz="1.14992448998965E-05"
+        iyy="8.40416396795733E-05"
+        iyz="-4.379843232919E-07"
+        izz="8.22459416776943E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tangan titan urdf fak/meshes/link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tangan titan urdf fak/meshes/link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4"
+    type="revolute">
+    <origin
+      xyz="0.057487 0 -0.081837"
+      rpy="0 0 0" />
+    <parent
+      link="link3" />
+    <child
+      link="link4" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="1.08"
+      velocity="7.48" />
+  </joint>
+  <link
+    name="gripmotor">
+    <inertial>
+      <origin
+        xyz="0.021877840612331 -0.00253321983136626 0.00200000000000302"
+        rpy="0 0 0" />
+      <mass
+        value="0.006998884373207" />
+      <inertia
+        ixx="4.28311296511578E-07"
+        ixy="4.15842592335031E-07"
+        ixz="-1.12496563307212E-21"
+        iyy="3.51380881302541E-06"
+        iyz="-2.40888152497742E-22"
+        izz="3.9234564178751E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tangan titan urdf fak/meshes/gripmotor.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tangan titan urdf fak/meshes/gripmotor.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint5"
+    type="continuous">
+    <origin
+      xyz="0.059 -0.04361 -0.039"
+      rpy="0 0 0" />
+    <parent
+      link="link4" />
+    <child
+      link="gripmotor" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0.21575"
+      velocity="10.47" />
+  </joint>
+  <link
+    name="end">
+    <inertial>
+      <origin
+        xyz="-0.0606665452377065 -0.0141164389279597 0.00199999999999997"
+        rpy="0 0 0" />
+      <mass
+        value="0.00699888437320699" />
+      <inertia
+        ixx="4.28311296511578E-07"
+        ixy="4.15842592335031E-07"
+        ixz="-1.12496563307212E-21"
+        iyy="3.51380881302541E-06"
+        iyz="-2.40888152497742E-22"
+        izz="3.9234564178751E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tangan titan urdf fak/meshes/end.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tangan titan urdf fak/meshes/end.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="end"
+    type="fixed">
+    <origin
+      xyz="0.082544 0.011583 0"
+      rpy="0 0 0" />
+    <parent
+      link="gripmotor" />
+    <child
+      link="end" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="grip2">
+    <inertial>
+      <origin
+        xyz="0.0166358171371935 0.00273141134860435 0.0019627491535912"
+        rpy="0 0 0" />
+      <mass
+        value="0.00824341290611818" />
+      <inertia
+        ixx="7.89666924646988E-07"
+        ixy="-6.52620644645378E-07"
+        ixz="-2.77448732349482E-09"
+        iyy="4.4401047487339E-06"
+        iyz="-5.62951884472498E-10"
+        izz="5.20781211650544E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tangan titan urdf fak/meshes/grip2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tangan titan urdf fak/meshes/grip2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="grip2"
+    type="prismatic">
+    <origin
+      xyz="0.059 -0.00871 -0.039"
+      rpy="0 0 0" />
+    <parent
+      link="link4" />
+    <child
+      link="grip2" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0.21575"
+      velocity="10.47" />
+  </joint>
+  <link
+    name="end2">
+    <inertial>
+      <origin
+        xyz="-0.0655848651188826 0.0108488930606347 0.00196274915358824"
+        rpy="0 0 0" />
+      <mass
+        value="0.00824341290611818" />
+      <inertia
+        ixx="7.89666924646988E-07"
+        ixy="-6.52620644645378E-07"
+        ixz="-2.77448732349478E-09"
+        iyy="4.4401047487339E-06"
+        iyz="-5.62951884472458E-10"
+        izz="5.20781211650545E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tangan titan urdf fak/meshes/end2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tangan titan urdf fak/meshes/end2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="end2"
+    type="fixed">
+    <origin
+      xyz="0.0822206822560761 -0.00811748171203039 0"
+      rpy="0 0 0" />
+    <parent
+      link="grip2" />
+    <child
+      link="end2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
